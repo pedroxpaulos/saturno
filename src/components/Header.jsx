@@ -7,7 +7,7 @@ function Header() {
 				<div className="pb-9">
 					<h1
 						className="font-display
-						sm:text-4 xl
+						sm:text-2xl
 						md:text-6xl
 						lg:text-8xl
 						2xl:text-9xl
