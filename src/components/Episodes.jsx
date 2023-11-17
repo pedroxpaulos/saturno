@@ -10,7 +10,7 @@ const Episodes = ({ PullData, episodes }) => {
 				{episodes.map((data) => (
 					<div className="mb-5 p-5" key={data.number}>
 						<div className="mb-5 flex flex-row items-center">
-							<div className="font-display text-6xl font-extralight italic underline decoration-wavy decoration-2 hover:decoration-4 decoration-yellow-900">
+							<div className="font-display sm:text-normal lg:text-6xl font-extralight italic underline decoration-wavy decoration-2 hover:decoration-4 decoration-yellow-900">
 								{data.number}
 							</div>
 							<div className="pl-5 text-sm font-extralight ">{data.day}</div>
@@ -20,7 +20,7 @@ const Episodes = ({ PullData, episodes }) => {
 								</button>
 							</div>
 						</div>
-						<div className="font-extralight text-base text-black">
+						<div className="font-extralight sm:text-xs md:text-base text-black">
 							{data.tracklist.map((track, index) => (
 								<p key={index}>{track}</p>
 							))}
