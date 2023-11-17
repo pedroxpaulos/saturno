@@ -19,7 +19,7 @@ const Navbar = () => {
 	return (
 		<div className="flex justify-between items-center w-full h-20 px-4 text-black bg-white border-b-2 border-yellow-900 fixed">
 			<div className="flex flex-row items-center">
-				<h1 className="font-display text-5xl ml-2underline decoration-wavy decoration-2 hover:decoration-4 decoration-yellow-900">
+				<h1 className="font-display sm:text-1xl text-5xl ml-2underline decoration-wavy decoration-2 hover:decoration-4 decoration-yellow-900">
 					SATURNO
 				</h1>
 				<h2 className="font-body ml-4 text-xs font-thin">POR PEDRO PAULOS</h2>
