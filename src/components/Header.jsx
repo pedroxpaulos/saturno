@@ -1,13 +1,14 @@
 import React from 'react';
+import { FaPlay } from 'react-icons/fa';
 
-function Header() {
+function Header({ episode, PullData }) {
 	return (
-		<div className="w-full h-screen text-black bg-white border-b-2 overflow-hidden">
-			<div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-				<div className="pb-9">
+		<div className="text-black bg-white overflow-hidden">
+			<div className="max-w-6xl p-4 mt-40 flex flex-col justify-center w-full h-full">
+				<div className="mb-6">
 					<h1
-						className="font-display
-						sm:text-2xl
+						className=" font-display
+						text-4xl
 						md:text-6xl
 						lg:text-8xl
 						2xl:text-9xl
@@ -23,13 +24,15 @@ function Header() {
 						Música para outras dimensões
 					</h1>
 				</div>
-				<h3 className="text-base uppercase font-light">
-					Todas as semanas na FUTURA
-				</h3>
-				<h3 className="text-sm uppercase font-thin">Sextas-feiras ⬤ 17h00</h3>
-				<h3 className="text-sm uppercase font-thin">
-					Repetição ⬤ Quinta-feira seguinte ⬤ 17h00
-				</h3>
+				<div className="mb-8">
+					<h3 className="text-base uppercase font-light">
+						Todas as semanas na FUTURA
+					</h3>
+					<h3 className="text-sm uppercase font-thin">Sextas-feiras ⬤ 17h00</h3>
+					<h3 className="text-sm uppercase font-thin">
+						Quinta-feira seguinte ⬤ 17h00 ⬤ Repetição
+					</h3>
+				</div>
 			</div>
 		</div>
 	);

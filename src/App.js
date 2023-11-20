@@ -176,6 +176,7 @@ function App() {
 
 	return (
 		<div>
+			ls
 			<BrowserRouter>
 				<Navbar />
 				<Routes>

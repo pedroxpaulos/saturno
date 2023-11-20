@@ -4,7 +4,7 @@ import 'react-h5-audio-player/lib/styles.css';
 
 const Player = ({ episode }) => {
 	return (
-		<div className="sticky bottom-0 max-h-full">
+		<div className="fixed inset-x-0 bottom-0 max-w-full">
 			<div className="pl-5 bg-gradient-to-r from-black to-yellow-900 text-white">
 				<p className="font-display text-sm uppercase font-thin">
 					{episode.number}
