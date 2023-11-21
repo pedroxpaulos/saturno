@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import Episodes from './components/Episodes';
 import NoPage from './components/NoPage';
 import Player from './components/Player';
+import About from './components/About';
 
 function App() {
 	const episodeList = [
@@ -185,6 +186,7 @@ function App() {
 						path="/episodes"
 						element={<Episodes episodes={sortedEpisodes} PullData={PullData} />}
 					/>
+					<Route path="/about" element={<About />} />
 					<Route path="*" element={<NoPage />} />
 				</Routes>
 				<Player episode={episodes} />

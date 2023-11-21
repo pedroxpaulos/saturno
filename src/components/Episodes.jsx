@@ -4,13 +4,12 @@ import { FaPlay } from 'react-icons/fa';
 
 const Episodes = ({ PullData, episodes }) => {
 	return (
-		<div className="text-black bg-white">
-			<h1 className="font-display p-5 text-5xl">EPISODES</h1>
+		<div className="mt-20 mb-40 text-black bg-white mx-auto md:w-1/2">
 			<div className="text-amber-900 flex flex-col md:justify-center">
 				{episodes.map((data) => (
 					<div className="mb-5 p-5" key={data.number}>
 						<div className="mb-5 flex flex-row items-center">
-							<div className="font-display sm:text-normal lg:text-6xl font-extralight italic underline decoration-wavy decoration-2 hover:decoration-4 decoration-yellow-900">
+							<div className="font-display sm:text-normal lg:text-normal font-extralight italic underline decoration-wavy decoration-2 hover:decoration-4 decoration-yellow-900">
 								{data.number}
 							</div>
 							<div className="pl-5 text-sm font-extralight ">{data.day}</div>
@@ -20,7 +19,7 @@ const Episodes = ({ PullData, episodes }) => {
 								</button>
 							</div>
 						</div>
-						<div className="font-extralight sm:text-xs md:text-base text-black">
+						<div className="font-extralight sm:text-xs md:text-sm text-black">
 							{data.tracklist.map((track, index) => (
 								<p key={index}>{track}</p>
 							))}

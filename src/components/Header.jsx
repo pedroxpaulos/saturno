@@ -1,9 +1,8 @@
 import React from 'react';
-import { FaPlay } from 'react-icons/fa';
 
 function Header({ episode, PullData }) {
 	return (
-		<div className="text-black bg-white overflow-hidden">
+		<div className="text-black bg-white overflow-hidden mx-auto md:w-1/2">
 			<div className="max-w-6xl p-4 mt-40 flex flex-col justify-center w-full h-full">
 				<div className="mb-6">
 					<h1
