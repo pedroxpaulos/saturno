@@ -19,7 +19,7 @@ const Episodes = ({ PullData, episodes }) => {
 								</button>
 							</div>
 						</div>
-						<div className="font-extralight sm:text-xs md:text-sm text-black">
+						<div className="font-extralight text-xs md:text-sm text-black">
 							{data.tracklist.map((track, index) => (
 								<p key={index}>{track}</p>
 							))}

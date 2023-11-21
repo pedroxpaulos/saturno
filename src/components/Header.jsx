@@ -9,7 +9,7 @@ function Header({ episode, PullData }) {
 						className=" font-display
 						text-4xl
 						md:text-6xl
-						lg:text-8xl
+						lg:text-7xl
 						2xl:text-9xl
 						text-transparent
 						underline

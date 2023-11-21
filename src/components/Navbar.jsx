@@ -12,8 +12,13 @@ const Navbar = () => {
 			id: 4,
 			link: 'https://open.spotify.com/playlist/0eEsHhfILKmDF3DNMj1G6V',
 			text: 'Playlist',
+			extra: '_blank',
 		},
-		{ id: 5, link: '/contact', text: 'Contactos' },
+		{
+			id: 5,
+			link: 'mailto://pedropaulos@brandoscostumes.pt',
+			text: 'Contactar',
+		},
 	];
 
 	return (
@@ -42,13 +47,13 @@ const Navbar = () => {
 				{nav ? <FaTimes size={30} /> : <FaBars size={30} />}
 			</div>
 			{nav && (
-				<ul className="flex flex-col justify-center items-center absolute top-0 w-full h-screen bg-white text-black ">
-					{links.map(({ id, link, text }) => (
+				<ul className="flex flex-col justify-center items-center -mt-10 absolute top-0 w-full h-screen bg-white text-black ">
+					{links.map(({ id, link, text, extra }) => (
 						<li
 							key={id}
-							className="px4 cursor-pointer capitalize py-6 text-1xl font-extralight underline decoration-wavy decoration-2 decoration-yellow-900"
+							className="px4 cursor-pointer capitalize py-6 text-1xl font-extralight md:underline decoration-wavy decoration-2 decoration-yellow-900"
 						>
-							<Link onClick={() => setNav(!nav)} to={link}>
+							<Link target={extra} onClick={() => setNav(!nav)} to={link}>
 								{text}
 							</Link>
 						</li>

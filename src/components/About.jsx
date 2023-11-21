@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const About = () => {
 	return (
-		<div className="text-black bg-white overflow-hidden mx-auto md:w-1/2">
+		<div className="text-black bg-white overflow-hidden mx-auto mb-40 md:w-1/2">
 			<div className="max-w-6xl p-4 mt-20 md:mt-40 flex flex-col md:flex-row justify-center w-full h-full">
 				<div className="mb-6 mr-20">
 					<img src={promo} alt="promo shot" />
