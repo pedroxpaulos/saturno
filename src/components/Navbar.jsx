@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaSpotify } from 'react-icons/fa';
+
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -11,7 +13,7 @@ const Navbar = () => {
 		{
 			id: 4,
 			link: 'https://open.spotify.com/playlist/0eEsHhfILKmDF3DNMj1G6V',
-			text: 'Playlist',
+			text: `Playlist`,
 			extra: '_blank',
 		},
 		{
@@ -36,7 +38,16 @@ const Navbar = () => {
 						key={id}
 						className="font-display px-4 cursor-pointer capitalize font-extralight text-gray-700 hover:underline decoration-wavy decoration-2 decoration-yellow-900"
 					>
-						<Link to={link}>{text}</Link>
+						<Link to={link} className="flex items-center">
+							{text === 'Playlist' ? (
+								<>
+									{text}
+									<FaSpotify className="ml-1" />
+								</>
+							) : (
+								text
+							)}
+						</Link>
 					</li>
 				))}
 			</ul>
@@ -53,8 +64,20 @@ const Navbar = () => {
 							key={id}
 							className="px4 cursor-pointer capitalize py-6 text-1xl font-extralight md:underline decoration-wavy decoration-2 decoration-yellow-900"
 						>
-							<Link target={extra} onClick={() => setNav(!nav)} to={link}>
-								{text}
+							<Link
+								className="flex items-center"
+								target={extra}
+								onClick={() => setNav(!nav)}
+								to={link}
+							>
+								{text === 'Playlist' ? (
+									<>
+										{text}
+										<FaSpotify className="ml-2" />
+									</>
+								) : (
+									text
+								)}
 							</Link>
 						</li>
 					))}
