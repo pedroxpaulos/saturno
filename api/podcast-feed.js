@@ -1,4 +1,4 @@
-const episodeList = require('../src/App.js'); // Adjust the path and extension accordingly
+const episodeList = require('../src/episodes/episodes.js'); // Adjust the path and extension accordingly
 const express = require('express');
 const RSS = require('rss');
 const fs = require('fs').promises;
