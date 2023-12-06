@@ -4,13 +4,13 @@ const fs = require('fs');
 const RSS = require('rss');
 
 const feed = new RSS({
-	title: 'Your Podcast Title',
+	title: 'Saturno',
 	description: 'Your podcast description',
 	feed_url: 'https://your-podcast-url.com/feed',
-	site_url: 'https://your-podcast-url.com',
+	site_url: 'http://saturno.id',
 	image_url: 'https://your-podcast-url.com/logo.png',
-	managingEditor: 'your@email.com (Your Name)',
-	webMaster: 'your@email.com (Your Name)',
+	managingEditor: 'pedropaulos@brandoscostumes.pt',
+	webMaster: 'pedropaulos@brandoscostumes.pt',
 	language: 'en',
 	pubDate: new Date(),
 });
@@ -20,10 +20,10 @@ episodeList.forEach((episode) => {
 
 	const episodeData = {
 		title: `Episode ${number} - ${day}`,
-		description: `Description for Episode ${number}`,
+		description: tracklist,
 		url: link,
 		guid: link,
-		author: 'Your Name',
+		author: 'Pedro Paulos',
 		date: new Date(),
 		enclosure: {
 			url: link,
@@ -34,10 +34,10 @@ episodeList.forEach((episode) => {
 
 	tracklist.forEach((track) => {
 		episodeData.custom_elements = [
-			{ 'itunes:author': 'Your Name' },
+			{ 'itunes:author': 'Pedro Paulos' },
 			{ 'itunes:subtitle': track.title },
 			{ 'itunes:summary': track.title },
-			{ 'itunes:duration': '00:05:00' }, // You can adjust the duration
+			{ 'itunes:duration': '01:00:00' }, // You can adjust the duration
 		];
 	});
 

@@ -1,0 +1,6 @@
+{
+    "routes": [
+      { "src": "/podcast-feed.xml", "dest": "/api/podcast-feed" },
+      { "handle": "filesystem" }
+    ]
+  }
