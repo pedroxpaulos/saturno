@@ -1,4 +1,3 @@
-// server.js
 import episodeList from '../src/App';
 
 const express = require('express');
@@ -78,3 +77,5 @@ async function generatePodcastFeed() {
 	console.log('Podcast feed generated successfully.');
 	return xml;
 }
+
+module.exports = generatePodcastFeed;
