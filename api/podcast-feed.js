@@ -1,4 +1,4 @@
-import episodeList from '../src/App';
+const episodeList = require('../src/App'); // Adjust the path accordingly
 
 const express = require('express');
 const RSS = require('rss');
