@@ -1,5 +1,4 @@
-const episodeList = require('../src/App'); // Adjust the path accordingly
-
+const episodeList = require('../src/App.js'); // Adjust the path and extension accordingly
 const express = require('express');
 const RSS = require('rss');
 const fs = require('fs').promises;
@@ -67,11 +66,9 @@ async function generatePodcastFeed() {
 	});
 
 	const xml = feed.xml({ indent: true });
-	const filePath = path.join(
-		__dirname,
-		'path-to-your-xml-file',
-		'podcast-feed.xml'
-	);
+
+	// Write the XML file to the Vercel NOW directory
+	const filePath = path.join('/var/task', 'podcast-feed.xml');
 	await fs.writeFile(filePath, xml, 'utf-8');
 
 	console.log('Podcast feed generated successfully.');
