@@ -296,7 +296,7 @@ function App() {
 		{
 			number: 'Saturno 007',
 			day: '27-11-2023',
-			link: 'YOUR_EPISODE_LINK_HERE',
+			link: 'https://archive.org/download/saturno-8-01-11-2023/Saturno%20007%20-%2024-11-2023.mp3',
 			tracklist: [
 				'The Beatles - Because',
 				'Tammy Payne - Same',
