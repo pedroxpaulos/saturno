@@ -1,6 +1,13 @@
 {
-    "routes": [
-      { "src": "/podcast-feed.xml", "dest": "/api/podcast-feed.js" },
-      { "handle": "filesystem" }
-    ]
-  }
+  "routes": [
+    { "src": "/podcast-feed.xml", "dest": "src/api/podcast-feed.js" }
+  ],
+  "builds": [
+    { "src": "src/serverless/**", "use": "@vercel/node" }
+  ],
+  "ignore": [
+    "src/components/",
+    "src/episodes/",
+    "src/App.jsx"
+  ]
+}
