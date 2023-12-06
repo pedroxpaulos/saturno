@@ -1,4 +1,5 @@
 // server.js
+import episodeList from '../src/App';
 
 const express = require('express');
 const RSS = require('rss');
@@ -35,10 +36,6 @@ async function generatePodcastFeed() {
 		language: 'en',
 		pubDate: new Date(),
 	});
-
-	const episodeList = [
-		// ... your episodeList data ...
-	];
 
 	episodeList.forEach((episode) => {
 		const { number, day, link, tracklist } = episode;
