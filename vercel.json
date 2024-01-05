@@ -1,8 +1,0 @@
-{
-  "routes": [
-    { "src": "/podcast-feed.xml", "dest": "./src/api/podcast-feed.js" }
-  ],
-  "builds": [
-    { "src": "./src/api/**", "use": "@vercel/node" }
-  ],
-}
