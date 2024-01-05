@@ -321,7 +321,7 @@ const episodeList = [
 	},
 	{
 		number: 'Saturno 008',
-		day: '01-11-2023',
+		day: '01-12-2023',
 		link: 'https://archive.org/download/saturno-8-01-11-2023/Saturno%208%20-%2001-11-2023.mp3', // Replace with the actual link
 		tracklist: [
 			'Shuggie Otis - Strawberry Letter 23',
@@ -360,7 +360,7 @@ const episodeList = [
 	},
 	{
 		number: 'Saturno 009',
-		day: '8-11-2023',
+		day: '8-12-2023',
 		link: 'https://archive.org/download/saturno-10-15-12-2023/Saturno%20009%20-%2008-11-2023.mp3', // Replace with the actual link
 		tracklist: [
 			'French 79 - Hometown (Intro)',
