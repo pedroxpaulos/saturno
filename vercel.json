@@ -5,8 +5,4 @@
   "builds": [
     { "src": "./src/api/**", "use": "@vercel/node" }
   ],
-  "ignore": [
-    "./src/components",
-    "./src/App.jsx"
-  ]
 }
