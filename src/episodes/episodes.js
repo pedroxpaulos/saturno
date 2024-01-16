@@ -603,6 +603,49 @@ const episodeList = [
 			3599, // Last song ends at 59:59
 		],
 	},
+	{
+		number: 'Saturno 014',
+		day: '12-01-2024',
+		link: 'https://archive.org/download/saturno-014-12-01-2024/saturno%20014%20%20-%2012-01-2024.mp3', // Replace with the actual link
+		tracklist: [
+			'Sally Oldfield - Blue Water',
+			'Brhany - Bloom',
+			'Lynda Dawn - Move',
+			'Madonna - Justify My Love',
+			'Shintaro Sakamoto - Like an Obligation',
+			'Steve Lacy - Looks',
+			'The Lazy Eyes - Imaginary Girl',
+			'Jim Sullivan - U.F.O.',
+			'X - I Must Not Think Bad Thoughts',
+			'Squeeze - Up The Junction',
+			'The Records - Starry Eyes',
+			"Sabina - Viva l'amour",
+			'Yumi Zouma - Cool For A Second',
+			'Curtis Water - Manic Man',
+			'Dinosaur Jr - Knocked Around',
+		],
+		startTimes: [
+			12, 480, 710, 932, 1212, 1573, 1664, 2067, 2278, 2638, 2922, 3145, 3320,
+			3615, 3879,
+		],
+		endTimes: [
+			480,
+			710,
+			932,
+			1212,
+			1573,
+			1664,
+			2067,
+			2278,
+			2638,
+			2922,
+			3145,
+			3320,
+			3615,
+			3879,
+			4199, // Last song ends at 59:59
+		],
+	},
 ];
 
 module.exports = episodeList;
