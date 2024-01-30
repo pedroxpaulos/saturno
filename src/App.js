@@ -24,6 +24,7 @@ function App() {
 		return episodeDate < oneWeekAgo;
 	});
 
+	//sorts episodes by date
 	const sortedEpisodes = filteredEpisodes.sort((a, b) => {
 		const dateA = new Date(a.day.split('-').reverse().join('-'));
 		const dateB = new Date(b.day.split('-').reverse().join('-'));
@@ -37,7 +38,6 @@ function App() {
 
 	return (
 		<div>
-			ls
 			<BrowserRouter>
 				<Navbar />
 				<Routes>
