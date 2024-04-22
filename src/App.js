@@ -9,6 +9,7 @@ import NoPage from './components/NoPage';
 import Player from './components/Player';
 import About from './components/About';
 import episodeList from './episodes/episodes';
+import TracklistParser from './components/TracklistParser';
 
 function App() {
 	const PullData = (data) => {
@@ -46,6 +47,7 @@ function App() {
 						path="/episodes"
 						element={<Episodes episodes={sortedEpisodes} PullData={PullData} />}
 					/>
+					<Route path="/parser" element={<TracklistParser />} />
 					<Route path="/about" element={<About />} />
 					<Route path="*" element={<NoPage />} />
 				</Routes>

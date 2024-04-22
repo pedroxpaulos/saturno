@@ -27,7 +27,7 @@ const TracklistParser = () => {
 		const tracklistLines = tracklistInput.split('\n');
 		const tracklist = [];
 		const startTimes = [];
-		const endTimes = [];
+		const totalTimes = [];
 
 		tracklistLines.forEach((line, index) => {
 			if (!line.trim()) return; // Skip empty lines
@@ -41,14 +41,18 @@ const TracklistParser = () => {
 			}
 
 			const [minutes, seconds] = timeParts;
-			const startTime = index === 0 ? 0 : endTimes[index - 1];
-			const endTime =
-				startTime + parseInt(minutes, 10) * 60 + parseInt(seconds, 10);
+			const startTime = parseInt(minutes, 10) * 60 + parseInt(seconds, 10);
 
 			tracklist.push(`${artist.trim()} - ${song.trim()}`);
 			startTimes.push(startTime);
-			endTimes.push(endTime);
+			console.log('index ' + index + 'startTime ' + startTime);
+			if (index !== 0) {
+				totalTimes.push(startTime);
+			}
 		});
+		const endTimes = [...totalTimes, 3599];
+		console.log('start: ' + startTimes);
+		console.log('endtime: ' + endTimes);
 
 		const number = `Saturno ${episodeNumber}`;
 		const day = episodeDate;
@@ -79,7 +83,7 @@ const TracklistParser = () => {
 	};
 
 	return (
-		<div className="mt-9">
+		<div className="max-w-3xl mx-auto mt-20 mb-40 p-4 bg-gray-100 rounded-lg">
 			<div className="mb-4">
 				<label htmlFor="episodeNumber" className="block mb-2 font-semibold">
 					Episode Number:
