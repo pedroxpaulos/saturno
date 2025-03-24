@@ -1936,6 +1936,68 @@ const episodeList = [
     3599
   ]
 },
+{
+	"number": "Saturno 50",
+	"day": "11-10-2024",
+	"link": "https://archive.org/download/saturno-50/saturno%2050.mp3",
+	"tracklist": [
+	  "Okay Kaya - The Wannabe",
+	  "Alaï - Curiosa",
+	  "Sofie Royer - Young-Girl (Illusion)",
+	  "Nemahsis - you wore it better",
+	  "YULLOLA - The Girl Who Lost the World",
+	  "Royel Otis - Merry Mary Marry Me",
+	  "Mac DeMarco - My Old Man",
+	  "Fousheé - feel like home",
+	  "Oracle Sisters - Asc. Scorpio",
+	  "DJ Suzy - Digital girl (funk remix)",
+	  "Omar Apollo - Drifting",
+	  "Ginger Root - Loretta",
+	  "Real Action, PawPaw Rod, Kacy Hill - Stop The World",
+	  "L'Impératrice - Vacances (Yuksek Remix)",
+	  "Yin Yin - Takahashi Timing",
+	  "The Phenomenal Handclap Band - You'll Disappear",
+	  "Mermaid Chunky - chaperone"
+	],
+	"startTimes": [
+	  12,
+	  189,
+	  427,
+	  615,
+	  725,
+	  848,
+	  1060,
+	  1238,
+	  1397,
+	  1560,
+	  1708,
+	  1966,
+	  2154,
+	  2330,
+	  2462,
+	  2768,
+	  3156
+	],
+	"endTimes": [
+	  189,
+	  427,
+	  615,
+	  725,
+	  848,
+	  1060,
+	  1238,
+	  1397,
+	  1560,
+	  1708,
+	  1966,
+	  2154,
+	  2330,
+	  2462,
+	  2768,
+	  3156,
+	  3599
+	]
+  },
 ];
 
 module.exports = episodeList;
